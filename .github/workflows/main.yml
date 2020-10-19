@@ -38,7 +38,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+
+      # failure
+      - name: The job has failed
+        if: ${{ failure() }}
+
       # Runs npm
       - name: npm install
         run: npm install
