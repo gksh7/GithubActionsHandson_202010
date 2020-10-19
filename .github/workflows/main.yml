@@ -40,8 +40,8 @@ jobs:
           echo test, and deploy your project.
 
       # failure
-      - name: The job has failed
-        if: ${{ failure() }}
+      #- name: The job has failed
+      #  if: ${{ failure() }}
 
       # Runs npm
       - name: npm install
